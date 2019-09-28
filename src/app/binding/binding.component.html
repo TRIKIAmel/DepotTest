@@ -1,12 +1,27 @@
-<h1> {{titre }}</h1>
-<ul>
-    <li>{{valeurs[0]}}</li>
-    <li>{{valeurs[1]}}</li>
-    <li>{{valeurs[2]}}</li>
-    <li>{{valeurs[3]}}</li>
-</ul>
-<input type ="text" #champ >
-<button (click)="onClick()">Cliquez ici</button>
-<p>{{resultat}}</p>
-<p>{{champ.value}}</p>
+
+<h1> Bonjour {{nom }}</h1>
+<p>Longueur du nom: {{nom.length}}</p>
+<p>Minuscules: {{nom.toLowerCase()}}</p>
+<p>Nom et Prénom : {{nomComplet()}}</p>
+
+<!-- Property binding -->
+
+
+<h2>Property binding & event binding</h2>
+Nom: 
+<input type ="text" value="{{nom}}" [disabled]="!actif">
+<br>
+<button bind-disabled="actif" (click)="onAfficher()">Afficher</button>
+<br/>
+<input type ="text" (keyup)="onKeyUp($event)" #textbox />
+<span>  {{contenu}}</span>
+<br>
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button>
+
+<!--Two way databinding-->
+<h2>Two-way Databinding</h2>
+<br/>
+<label> Donnez un message</label>
+<input type ="text" [(ngModel)]="message" />
+<span> {{message}}</span>
 

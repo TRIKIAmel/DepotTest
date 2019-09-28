@@ -1,0 +1,15 @@
+
+<h1>Titre</h1>
+<label>Donnez l'âge</label>
+<input type ="number" #box (keyup)="0"/>
+<input type="checkbox" name="chkEtud" value="Mineur" [checked]= "box.value <18"  />
+<br>
+<label>Donnez la moyenne</label>
+<input type ="number" [(ngModel)]= "moyenne" [disabled]="moyenne <0 ||moyenne >20"/>
+<input type="checkbox" name="chkEtud" value="Mineur" [checked]= "box.value <18"  />
+{{box.value}}
+<label>Donnez la min</label>
+<input type ="number"  [(min)]="minimum"/>
+<button (click)="onMin()">min</button>
+<br>
+

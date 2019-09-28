@@ -1,0 +1,11 @@
+<h1>{{titre}}</h1>
+<p> Taille du titre: {{taille()}}</p>
+
+<button [disabled]="actif">OK</button>
+<button bind-disabled="actif">OK</button>
+<button (click)="onAfficher()">Afficher</button>
+
+<br>
+<input type="text" [(ngModel)]="val">
+<br>
+<button (click)="onTwoWay()">Two Way</button>

@@ -1,0 +1,13 @@
+<h1>{{titre}}</h1>
+<ul>
+    <li>{{tabNb[0]}}</li>
+    <li>{{tabNb[1]}}</li>
+    <li>{{tabNb[2]}}</li>
+    <li>{{tabNb[3]}}</li>
+</ul>
+<ul>
+    <li *ngFor="let nb of tabNb"> {{nb}}</li>
+</ul>
+<p>Minimum = {{minimum()}}</p>
+<p>Moyenne = {{moyenne()}}</p>
+<p>Taille titre = {{titre.length}}</p>
