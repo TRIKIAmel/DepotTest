@@ -1,8 +1,8 @@
 
 <h1> Bonjour {{nom }}</h1>
 <p>Longueur du nom: {{nom.length}}</p>
-<p>Minuscules: {{nom.toLowerCase()}}</p>
-<p>Nom et Prénom : {{nomComplet()}}</p>
+<p>Majuscules: {{nom.toUpperCase()}}</p>
+<p>Infos : {{infos()}}</p>
 
 <!-- Property binding -->
 
@@ -10,12 +10,16 @@
 <h2>Property binding & event binding</h2>
 Nom: 
 <input type ="text" value="{{nom}}" [disabled]="!actif">
+<input type ="text" [value]="nom" [disabled]="actif">
 <br>
-<button bind-disabled="actif" (click)="onAfficher()">Afficher</button>
+<button bind-disabled="!actif" (click)="onAfficher()">Afficher</button>
 <br/>
-<input type ="text" (keyup)="onKeyUp($event)" #textbox />
+<h2>Récupération de l'entrée de l'utilisateur avec $event</h2>
+<input type ="text" (keyup)="onKeyUp($event)" />
 <span>  {{contenu}}</span>
 <br>
+<h2>Récupération de l'entrée de l'utilisateur avec variable référencée</h2>
+<input type ="text" #textbox />
 <button (click)="onAfficherContenu(textbox.value)">Afficher</button>
 
 <!--Two way databinding-->

@@ -7,27 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent {
 
-  nom:string ="DSI";
-  actif:boolean=false;
+  nom:string ="Houda";
+  age:number =20;
+  actif:boolean=true;
   contenu:string="";
   message:string="Message initial";
+/* Interpolation */
 
-
-  nomComplet()
-  {
-    return this.nom +"21";
+infos()  {
+    return this.nom +" a pour âge " + this.age;
   }
   
-  onAfficher(val:any)
+  onAfficher()
   {
     console.log(this.nom);
   }
-  /*
-  onKeyUp(event:any)
+  
+/*  onKeyUp(event:any)
   {
+    console.log(event.target + " "+ event.target.value);
       this.contenu = event.target.value;
   }*/
 
+  /* Event Binding */
   onKeyUp(event:KeyboardEvent)
   {
       this.contenu = 'Bonjour '+(<HTMLInputElement>event.target).value;
