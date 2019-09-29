@@ -1,0 +1,11 @@
+
+    <h1>{{titre}}</h1>
+    <label> Donnez un 1er nombre</label>
+    <input type="number" [(ngModel)]="nb1"/>
+    <br>
+    <label> Donnez un 2ème nombre</label>
+    <input type="number" [(ngModel)]="nb2"/>
+    <br>
+    <button (click)="onProduit()">Calculer</button>
+    <br>
+    <p>Le produit est {{produit}} </p>

@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ex1',
-  templateUrl: './ex1.component.html',
-  styleUrls: ['./ex1.component.css']
+  selector: 'app-tableau',
+  templateUrl: './tableau.component.html',
+  styleUrls: ['./tableau.component.css']
 })
-export class Ex1Component implements OnInit {
+export class TableauComponent implements OnInit {
 
   titre:string= "Opérations sur un tableau";
-  tabNb =[18, 23, 58, 30];
+  tabNb: number[] =[41, 18, 23, 58, 30];
 
   constructor() { 
 
@@ -32,7 +32,7 @@ export class Ex1Component implements OnInit {
     {
       somme+= nb;
     }
-    return somme/this.tabNb.length;
+    return (somme/this.tabNb.length).toFixed(2);
   }
 
 

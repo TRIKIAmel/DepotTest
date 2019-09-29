@@ -1,0 +1,13 @@
+
+    <h1>{{titre}}</h1>
+    <label> Donnez un premier nombre</label>
+    <input type="number" #nb1 (keyup)="onCarre($event)"/>
+    <br>
+    <p> Le carré est: {{carre}} </p>
+
+    <label> Donnez un deuxième nombre</label>
+    <input type="number" #nb2  (keyup)="0"/>
+    <br>
+    <button (click)="onSomme(nb1.value, nb2.value)" [disabled]="nb1.value=='' || nb2.value==''">Somme</button>
+    <br>
+    <p>Somme: {{somme}} </p>

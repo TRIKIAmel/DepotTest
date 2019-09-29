@@ -1,0 +1,45 @@
+<h1>Liste des candidats</h1>
+
+<div *ngFor="let pers of tabCandidats ; let indice= index">
+    <img [src]="pers.image" alt="photo" width="70" height="70"/>
+    <span>Nom: {{pers.nom}}</span>
+    <input type="checkbox" name="chkParti" value="part" disabled [checked]= "!pers.parti"  /> Indépendant
+    <span>Nb Followers: {{pers.nb}}</span>
+    <button (click)="onFollow(indice)"> Follow</button>
+</div>
+
+<!--
+<div *ngFor="let pers of tabCandidats">
+    <img [src]="pers.image" alt="photo" width="70" height="70"/>
+    <span>Nom: {{pers.nom}}</span>
+    <input type="checkbox" name="chkParti" value="part" disabled [checked]= "!pers.parti"  /> Indépendant
+    <span>Nb Followers: {{pers.nb}}</span>
+    <button (click)="onFollow(pers)"> Follow</button>
+</div>
+-->
+<!--
+<div>
+        <img [src]="tabCandidats[0].image" alt="photo" width="70" height="70"/>
+        <span>Nom: {{tabCandidats[0].nom}}</span>
+        <input type="checkbox" name="chkParti" value="part" disabled [checked]= "!tabCandidats[0].parti"  /> Indépendant
+        <span>Nb Followers: {{tabCandidats[0].nb}}</span>
+        <button (click)="onFollow(tabCandidats[0])"> Follow</button>
+    </div>
+    <div>
+            <img [src]="tabCandidats[1].image" alt="photo" width="70" height="70"/>
+            <span>Nom: {{tabCandidats[1].nom}}</span>
+            <input type="checkbox" name="chkParti" value="part" disabled [checked]= "!tabCandidats[1].parti"  /> Indépendant
+            <span>Nb Followers: {{tabCandidats[1].nb}}</span>
+            <button (click)="onFollow(tabCandidats[1])"> Follow</button>
+        </div>
+        <div>
+                <img [src]="tabCandidats[2].image" alt="photo" width="70" height="70"/>
+                <span>Nom: {{tabCandidats[2].nom}}</span>
+                <input type="checkbox" name="chkParti" value="part" disabled [checked]= "!tabCandidats[2].parti"  /> Indépendant
+                <span>Nb Followers: {{tabCandidats[2].nb}}</span>
+                <button (click)="onFollow(tabCandidats[2])"> Follow</button>
+            </div>
+        -->
+<p>
+    Nombre de candidats indépendants: {{nbIndependants()}}
+</p>

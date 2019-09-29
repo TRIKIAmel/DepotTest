@@ -5,9 +5,11 @@
     <li>{{tabNb[2]}}</li>
     <li>{{tabNb[3]}}</li>
 </ul>
+
 <ul>
-    <li *ngFor="let nb of tabNb"> {{nb}}</li>
-</ul>
+        <li *ngFor="let tab of tabNb">{{tab}}</li>
+
+    </ul>
 <p>Minimum = {{minimum()}}</p>
 <p>Moyenne = {{moyenne()}}</p>
 <p>Taille titre = {{titre.length}}</p>
