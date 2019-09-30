@@ -9,12 +9,9 @@ import { ExempleCoursComponent } from './exemple-cours/exemple-cours.component';
 import { PersonneComponent } from './personne/personne.component';
 import { CalculComponent } from './calcul/calcul.component';
 import { ProduitComponent } from './produit/produit.component';
-<<<<<<< HEAD
-import { EtudiantViewComponent } from './etudiant-view/etudiant-view.component';
 import { NouveauComposantComponent } from './nouveau-composant/nouveau-composant.component';
-=======
 import { CandidatViewComponent } from './candidat-view/candidat-view.component';
->>>>>>> 989be2b
+
 
 
 @NgModule({
@@ -26,12 +23,9 @@ import { CandidatViewComponent } from './candidat-view/candidat-view.component';
     PersonneComponent,
     CalculComponent,
     ProduitComponent,
-<<<<<<< HEAD
-    EtudiantViewComponent,
-    NouveauComposantComponent
-=======
+    NouveauComposantComponent,
     CandidatViewComponent
->>>>>>> 989be2b
+
 
   ],
   imports: [
