@@ -9,7 +9,7 @@ import { ExempleCoursComponent } from './exemple-cours/exemple-cours.component';
 import { PersonneComponent } from './personne/personne.component';
 import { CalculComponent } from './calcul/calcul.component';
 import { ProduitComponent } from './produit/produit.component';
-import { EtudiantViewComponent } from './etudiant-view/etudiant-view.component';
+import { CandidatViewComponent } from './candidat-view/candidat-view.component';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { EtudiantViewComponent } from './etudiant-view/etudiant-view.component';
     PersonneComponent,
     CalculComponent,
     ProduitComponent,
-    EtudiantViewComponent
+    CandidatViewComponent
 
   ],
   imports: [
