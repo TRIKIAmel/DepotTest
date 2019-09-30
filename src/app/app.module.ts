@@ -10,6 +10,7 @@ import { PersonneComponent } from './personne/personne.component';
 import { CalculComponent } from './calcul/calcul.component';
 import { ProduitComponent } from './produit/produit.component';
 import { EtudiantViewComponent } from './etudiant-view/etudiant-view.component';
+import { NouveauComposantComponent } from './nouveau-composant/nouveau-composant.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { EtudiantViewComponent } from './etudiant-view/etudiant-view.component';
     PersonneComponent,
     CalculComponent,
     ProduitComponent,
-    EtudiantViewComponent
+    EtudiantViewComponent,
+    NouveauComposantComponent
 
   ],
   imports: [

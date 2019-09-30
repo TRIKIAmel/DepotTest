@@ -1,10 +1,12 @@
 <h1>{{titre}}</h1>
 <p> Taille du titre: {{taille()}}</p>
-
 <button [disabled]="actif">OK</button>
 <button bind-disabled="actif">OK</button>
 <button (click)="onAfficher()">Afficher</button>
-
+<input type="text" (keyup)="onKeyUp($event)">
+<br>
+<input type="text" #textbox>
+<button (click)="onAffiche(textbox.value)">Afficher</button>
 <br>
 <input type="text" [(ngModel)]="val">
 <br>

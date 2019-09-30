@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ExempleCoursComponent implements OnInit {
 
   titre= "Interpolation";
+  activation =true;
+  
+  
+  
+  
   actif = true;
   val:string ="essai";
   taille()
@@ -22,6 +27,14 @@ export class ExempleCoursComponent implements OnInit {
   {
     console.log("ok");
   }
+  onAffiche(chaine:string)
+  {
+    console.log(chaine);
+  }
+  onKeyUp(event:KeyboardEvent)
+   {
+     console.log((<HTMLInputElement>event.target).value);
+   }
   constructor() { }
 
   ngOnInit() {
