@@ -11,6 +11,7 @@ import { CalculComponent } from './calcul/calcul.component';
 import { ProduitComponent } from './produit/produit.component';
 import { NouveauComposantComponent } from './nouveau-composant/nouveau-composant.component';
 import { CandidatViewComponent } from './candidat-view/candidat-view.component';
+import { Comp1Component } from './comp1/comp1.component';
 
 
 
@@ -24,7 +25,8 @@ import { CandidatViewComponent } from './candidat-view/candidat-view.component';
     CalculComponent,
     ProduitComponent,
     NouveauComposantComponent,
-    CandidatViewComponent
+    CandidatViewComponent,
+    Comp1Component
 
 
   ],
